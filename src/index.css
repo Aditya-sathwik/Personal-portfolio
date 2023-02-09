@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,18 +13,38 @@ body {
 --color-button: linear-gradient(157.81deg, #DEF9FA -43.27%, #BEF3F5 -21.24%, #9DEDF0 12.19%, #7DE7EB 29.82%, #5CE1E6 51.94%, #33BBCF 90.29%);
   --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
   --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+
+  --color-font : radial-gradient(64.18% 64.18% at 71.16% 35.69%, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%) ;
   
   --color-bg: #040C18;
-  --color-footer : #031B34;
+  --color-footer : #f1e74d;
   --color-blog: #042c54;
   --color-text: #81AFDD;
   --color-subtext: #FF8A71;
 }
 
 #namee {
-  background:var(--gradient-text);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  background: var(--gradient-text);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+}
+#namee2 {
+  /* background: var(--gradient-text);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent; */
+
+
+
+}
+
+#image-home {
+  position: relative;
 }
 
 
@@ -32,8 +52,9 @@ body {
          
 .btn-primary {
   background-image:var(--color-button);
-  margin: 10px;
-  padding: 15px 45px;
+ 
+  margin-right: 15px;
+  padding: 10px 35px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -44,9 +65,25 @@ body {
   display: block;
 }
 
+
 .btn-primary:hover {
   background-position: right center; /* change the direction of the change here */
   color: #130404;
   text-decoration: none;
+}
+@media only screen and (max-width: 400px) {
+  .btn-primary {
+  
+   
+    margin-left: 50px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .btn-primary {
+  
+   
+    margin-left: 58px;
+    padding: 7px 15px;
+  }
 }
 

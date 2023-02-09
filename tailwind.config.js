@@ -7,6 +7,11 @@ module.exports = {
     extend: {
       fontFamily: {
       Lobster: [ 'Lobster', 'cursive'],
+     Roboto: ['Roboto Slab', 'serif'],
+     Cour : ['Courgette', 'cursive'],
+     Poppins : ['Poppins', 'sans-serif'],
+  
+
       },
     
     },
