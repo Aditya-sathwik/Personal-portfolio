@@ -32,11 +32,11 @@ const Hero = () => {
               <button className='btn-primary mt-6'><a href='/' className='font-bold' target={'_blank'}>Download Resume </a></button>
 
               <div className="mt-8 text-5xl flex items-center md:justify-start justify-center text-gray-600 cursor-pointer gap-5">
-              <a href='https://github.com/sai-ram-kaushik' target={'_blank'}><AiFillGithub className='hover:text-white'/></a>
-                  <a href='https://www.linkedin.com/in/sairam-kaushik-711a40210/'target={'_blank'}><span className='hover:text-white'><AiFillLinkedin /></span></a>
-                  <a href='https://twitter.com/SairamKaushik'target={'_blank'}><span className='hover:text-white'><AiFillTwitterCircle /></span></a>
-                  <a href='https://www.instagram.com/sairamkaushik/'target={'_blank'}><span className='hover:text-white'><AiFillInstagram/></span></a>
-                  <a href='https://www.youtube.com/channel/UCXbU2mvUwhNnIAEQg2X7uPA'target={'_blank'}><span className='hover:text-white'><AiFillYoutube /></span></a>
+              <a href='https://github.com/Aditya-sathwik' target={'_blank'}><AiFillGithub className='hover:text-white'/></a>
+                  <a href='https://www.linkedin.com/in/aditya-sathwik-dasari-venkata-553616219/'target={'_blank'}><span className='hover:text-white'><AiFillLinkedin /></span></a>
+                  <a href='https://twitter.com/AdityaSathwik'target={'_blank'}><span className='hover:text-white'><AiFillTwitterCircle /></span></a>
+                  <a href='https://www.instagram.com/sathusathvi17/'target={'_blank'}><span className='hover:text-white'><AiFillInstagram/></span></a>
+                  
               </div>
 
        
