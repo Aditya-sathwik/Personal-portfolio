@@ -21,7 +21,7 @@ const Navbar = () => {
     <nav className={`fixed w-full left-0 top-0 z-[999] ${sticky ? "bg-white text-gray-900" : "text-white"}`}>
       <div className='flex item-center justify-between'>
         <div className='mx-7  flex' id='logo'>
-          <h4 className=' font-Lobster font-bold m-2 md:text-4xl text-2xl sm :text-sm px-2 py-2 border-4 border-yellow-500 rounded-xl'>Aditya <span className='text-orange-400 '>Sathwik</span></h4>
+          <h4 className=' font-Lobster font-bold m-2 md:text-4xl text-2xl sm :text-sm px-2 py-2 border-4 border-yellow-500 rounded-xl' id='headuu'>Aditya <span className='text-orange-400 '>Sathwik</span></h4>
 
         </div>
         <div className={` ${sticky ? 'md:bg-white/0 bg-white' : ''} text-white-900 lg:block hidden px-7 py-2 font-medium rounded-bl-full`}>
@@ -55,5 +55,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-
-

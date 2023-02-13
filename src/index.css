@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
 background-color: #000000;
 
@@ -32,6 +36,41 @@ background-clip: text;
 text-fill-color: transparent;
 
 
+}
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-track{
+  background-color:
+  #000000;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  border: 3px solid transparent;
+  border-radius: 9px;
+  background-clip: content-box;
+  cursor: pointer
+}
+
+/* #namee2 {
+
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+} */
+
+input,
+textarea {
+  @apply bg-slate-200 outline-none rounded-lg p-3;
+}
+
+::placeholder {
+  @apply text-lg
 }
 
 
@@ -66,6 +105,37 @@ text-fill-color: transparent;
    
     margin-left: 50px;
   }
+
+  #headuu{
+    font-size: 1.25rem;
+  }
+  #skp{
+    font-size: 0.50rem;
+  }
+  #icons{
+   width: 3rem;
+  }
+  #ai{
+    height: 200px;
+  }
+  #perfects{
+    width: 250px;
+    padding-left: 50px;
+  }
+  #raja{
+    width: 20rem;
+  }
+  #headuu2 {
+    font-size: 1rem;
+  }
+  #paroja {
+    margin-top: 135px;
+  }
+ 
+  #certifii{
+    margin-bottom: 135px;
+  }
+  
 }
 @media only screen and (max-width: 800px) {
   .btn-primary {
