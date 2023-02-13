@@ -1,5 +1,5 @@
 import React from 'react'
-import {html, css,javascript, reactImage, github,tailwind, git, bootstrap, wordpress,linux,figma} from './imports';
+import {html, css,javascript, reactImage, Github,tailwind, git, bootstrap, wordpress,linux,figma} from './imports';
 
 
 
@@ -28,7 +28,7 @@ const Skills = () => {
     },
     {
       id: 4,
-      src: github,
+      src: Github,
       title: "GITHUB",
       style: 'shadow-gray-500',
     },
@@ -78,25 +78,25 @@ const Skills = () => {
   return (
     <section id='skills' className='py-10 relative'>
       <div className="text-center mt-8 ">
-        <h3 className='text-5xl font-semibold '>
+        <h3 className='text-5xl font-semibold ' id='headuu'>
           <span className=' border-b-4 border-white-500 '><span id='namee'>Skills</span> <span className='text-sky-500'></span> </span></h3>
-        <p className='text-gray-400 my-5 text-lg'>Technologies i have worked with</p>
+        <p className='text-gray-400 my-5 text-lg' id='headuu2'>Technologies i have worked with</p>
       </div>
-      <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0 text-white">
+      <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0 text-white cursor-pointer">
         {techs.map(({ id, src, title, style }) => (
           <div
             key={id}
             className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
           >
-            <img src={src} alt="" className="w-20 mx-auto" />
-            <p className="mt-4">{title}</p>
-
-
-
-
+            <img src={src} alt="" className="w-20 mx-auto" id='icons' />
+            <p className="mt-4" id='skp'>{title}</p>
           </div>
         ))}
       </div>
+
+
+        
+
 
 
     </section>

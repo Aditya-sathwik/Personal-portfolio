@@ -5,9 +5,9 @@ const About = () => {
   return (
     <section className="py10  text-white" id='about'>
       <div className="text-center mt-8 ">
-        <h3 className='text-5xl font-semibold '>
+        <h3 className='text-5xl font-semibold ' id='headuu'>
           <span className=' border-b-4 border-white-500 '><span id='namee'>About</span> <span className='text-sky-500'>Me</span> </span></h3>
-        <p className='text-gray-400 my-5 text-lg'>Familiarizing Myself</p>
+        <p className='text-gray-400 my-5 text-lg' id='headuu2'>Familiarizing Myself</p>
         <div className="flex md:flex-row flex-col-reverse items-center  md:gap-6 gap-12 px-10 mx-auto max-w-6xl">
           <div>
             <div className="text-white my3">

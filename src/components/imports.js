@@ -2,7 +2,7 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
-import github from "../assets/github.png";
+import Github from "../assets/Github.png";
 import git from "../assets/git.png";
 import linux from "../assets/linux.png";
 import figma from "../assets/figma.png";
@@ -16,7 +16,7 @@ export {
     css,
      javascript, 
      reactImage,
-    github,
+    Github,
     tailwind, 
     git,
     bootstrap,
