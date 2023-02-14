@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 
 
 const Experience = () => {
+  useEffect(()=>{
+    AOS.init({duration:2000})
+  }
+,[]);
   return (
 
 <section id='experience'>
@@ -12,7 +19,7 @@ const Experience = () => {
      <p className='text-gray-400 my-5 text-lg' id='headuu2'>Technologies which iam insight into </p>
    </div>
 
-    <div className="h-screen w-full flex justify-center items-center">
+    <div className="h-screen w-full flex justify-center items-center" data-aos="flip-left">
 
 <div className="max-w-7xl mx-auto w-full grid grid-cols-9 px-2">
         {/* <!-- Stack 1 --> */}

@@ -1,15 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Typed from 'react-typed'
 import hero from '../assets/hero3.gif'
 import {AiFillGithub, AiFillLinkedin, AiFillTwitterCircle, AiFillInstagram, AiFillYoutube} from 'react-icons/ai'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+
+
+ 
+
 const Hero = () => {
+ useEffect(()=>{
+    AOS.init({duration:1500})
+  }
+,[]);
   return (
-    <section className='-min-h-screen flex py-10 md:flex-row  flex-col items-center' id='home'>
-      <div className='flex-1 flex items-center justify-center h-full' id='image-home'>
+    <section className='-min-h-screen flex py-10 md:flex-row  flex-col items-center' id='home' data-aos="fade-up">
+      <div className='flex-1 flex items-center justify-center h-full' id='image-home' data-aos="fade-right">
         <img src={hero} alt="img" className='md : w-11/12 h-full object-cover'/>
       </div>
       <div className='flex-1 '>
- <div className='md:text-left text-center mt-5'  >
+ <div className='md:text-left text-center mt-5' data-aos="fade-left" >
   <h1 className='md:text-5xl text-2xl md:leading-normal leading-10 text-[#f7ae50] font-bold  gap-3 font-Roboto' >
     <span className=' ' id='namee'>Hello! <br/></span>
     <span className='text-[#ffffff]'>Iam</span> 
@@ -29,7 +40,7 @@ const Hero = () => {
                     backSpeed={50}
                     loop />
               </div><br/>
-              <button className='btn-primary mt-6'><a href='/' className='font-bold' target={'_blank'}>Download Resume </a></button>
+              <button className='btn-primary mt-6' id='mainbutton'><a href='https://drive.google.com/file/d/1-M1eLbLG6ZoFJRs_RjeGZas5xDXbmtWo/view?usp=sharing' className='font-bold' target={'_blank'}>Download Resume </a></button>
 
               <div className="mt-8 text-5xl flex items-center md:justify-start justify-center text-gray-600 cursor-pointer gap-5">
               <a href='https://github.com/Aditya-sathwik' target={'_blank'}><AiFillGithub className='hover:text-white'/></a>

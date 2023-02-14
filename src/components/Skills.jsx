@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {html, css,javascript, reactImage, Github,tailwind, git, bootstrap, wordpress,linux,figma} from './imports';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 
 
 
 const Skills = () => {
-
+  useEffect(()=>{
+    AOS.init({duration:2000})
+  }
+,[]);
 
 
   const techs = [
@@ -86,7 +92,7 @@ const Skills = () => {
         {techs.map(({ id, src, title, style }) => (
           <div
             key={id}
-            className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+            className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`} data-aos="flip-right"
           >
             <img src={src} alt="" className="w-20 mx-auto" id='icons' />
             <p className="mt-4" id='skp'>{title}</p>

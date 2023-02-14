@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import about from "../assets/about.gif";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+
+
+
 
 const About = () => {
+  useEffect(()=>{
+    AOS.init({duration:2000})
+  }
+,[]);
   return (
-    <section className="py10  text-white" id='about'>
-      <div className="text-center mt-8 ">
+    <section className="py10  text-white" id='about' data-aos="fade-down">
+      <div className="text-center mt-8 " >
         <h3 className='text-5xl font-semibold ' id='headuu'>
           <span className=' border-b-4 border-white-500 '><span id='namee'>About</span> <span className='text-sky-500'>Me</span> </span></h3>
         <p className='text-gray-400 my-5 text-lg' id='headuu2'>Familiarizing Myself</p>

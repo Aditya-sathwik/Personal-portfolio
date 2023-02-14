@@ -1,14 +1,15 @@
-import React from 'react';
-import {
-  project1,
-  project2,
-  project3,
-  project4,
-} from "./imports2"
-
+import React, { useEffect } from 'react';
+import {project1,project2,project3, project4,} from "./imports2"
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 
 const Projects = () => {
+  useEffect(()=>{
+    AOS.init({duration:2000})
+  }
+,[]);
 
   return (
     <section id="projects" className="py-10 relative">
@@ -24,7 +25,7 @@ const Projects = () => {
 
 
 
-      <div className="  justify-center mt-12 ml-6 items-center max-w-[1200px] py-5 text-white grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-5 " id='perfects'>
+      <div className="  justify-center mt-12 ml-6 items-center max-w-[1200px] py-5 text-white grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-5 " id='perfects' data-aos="zoom-in">
 
 
 
