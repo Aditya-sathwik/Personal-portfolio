@@ -23,7 +23,7 @@ const Hero = () => {
  <div className='md:text-left text-center mt-5' data-aos="fade-left" >
   <h1 className='md:text-5xl text-2xl md:leading-normal leading-10 text-[#f7ae50] font-bold  gap-3 font-Roboto' >
     <span className=' ' id='namee'>Hello! <br/></span>
-    <span className='text-[#ffffff]'>Iam</span> 
+    <span className='text-[#ffffff]'>I  am</span> 
     <span  className=' text-[#f89a42] ' > Aditya Sathwik,</span>
    
   </h1>

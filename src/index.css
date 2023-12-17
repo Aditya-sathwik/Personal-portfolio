@@ -5,6 +5,7 @@
 
 html{
   scroll-behavior: smooth;
+  margin-left: 5px;
 }
 
 body {
@@ -36,6 +37,9 @@ background-clip: text;
 text-fill-color: transparent;
 
 
+}
+#exp{
+  padding-left: 20px;
 }
 ::-webkit-scrollbar {
   width: 0.75rem;
@@ -83,6 +87,20 @@ textarea {
  
   margin-right: 15px;
   padding: 10px 35px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(5, 5, 5);            
+  box-shadow: 0 0 10px #eee;
+  border-radius: 10px;
+  display: block;
+}
+.btn-sec {
+  background-image:var(--gradient-text);
+ 
+  margin-right: 15px;
+  padding: 3px 5px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -146,3 +164,31 @@ textarea {
   }
 }
 
+/* @media only screen and (max-width: 710px) {
+  #role {
+  font-size: 20px;
+  }
+  #techb{
+    font-size: 15px;
+    margin: 8px;
+  }
+} */
+@media only screen and (max-width: 500px) {
+  #role {
+  font-size: 7px;
+  }
+
+}
+@media only screen and (max-width: 315px) {
+  #techb {
+  font-size: 4xpx;
+  }
+
+}
+@media only screen and (max-width: 390px) {
+ 
+  #names{
+    font-size: 1.2rem;
+  }
+
+}
