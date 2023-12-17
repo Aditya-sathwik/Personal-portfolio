@@ -11,7 +11,7 @@ const Certifications = () => {
 ,[]);
   return (
 
-<section id='experience'>
+<section id='certifications'>
 <div className="text-center mt-20 "  id='certifii'>
      <h3 className='text-5xl font-semibold ' id='headuu' >
        <span className=' border-b-4 border-white-500 '><span className='text-sky-500'>My </span><span id='namee'>

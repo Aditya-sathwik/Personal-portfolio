@@ -39,7 +39,7 @@ const Experience = () => {
       },]
       
   return (
-    <section id='skills' className='py-10 relative'>
+    <section id='experience' className='py-10 relative'>
       <div className="text-center mt-8 ">
         <h3 className='text-5xl font-semibold ' id='headuu'>
           <span className=' border-b-4 border-white-500 '><span id='namee'>Experience</span> <span className='text-sky-500'></span> </span></h3>
