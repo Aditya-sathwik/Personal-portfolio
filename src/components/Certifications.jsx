@@ -12,14 +12,14 @@ const Certifications = () => {
   return (
 
 <section id='certifications'>
-<div className="text-center mt-20 "  id='certifii'>
+<div className="text-center mx-20 "  id='certifii'>
      <h3 className='text-5xl font-semibold ' id='headuu' >
        <span className=' border-b-4 border-white-500 '><span className='text-sky-500'>My </span><span id='namee'>
          Certifications </span>  </span></h3>
-     <p className='text-gray-400 my-5 text-lg' id='headuu2'>Knowledge + Skills = Certified Awesome </p>
+
    </div>
 
-    <div className="h-screen w-full flex justify-center items-center" data-aos="flip-left">
+    <div className="h-screen w-full flex justify-center my-[20px] items-center" data-aos="flip-left">
 
 <div className="max-w-7xl mx-auto w-full grid grid-cols-9 px-2">
         {/* <!-- Stack 1 --> */}

@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react';
-import Typed from 'react-typed'
+// import Typed from 'react-typed'
 import hero from '../assets/hero3.gif'
-import {AiFillGithub, AiFillLinkedin, AiFillTwitterCircle, AiFillInstagram, AiFillYoutube} from 'react-icons/ai'
+import {AiFillGithub, AiFillLinkedin,  AiFillInstagram} from 'react-icons/ai'
+import { FaXTwitter } from "react-icons/fa6";
+
+import { ReactTyped } from "react-typed";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -31,7 +34,7 @@ const Hero = () => {
   
   <div className='md:text-5xl text-lg md:leading-normal leading-5 mt-4 font-bold text-[#4ccbfd] font-Roboto '>
 
-              <Typed
+              <ReactTyped
                 strings={[
                     'A Web Developer',
                     'An Electronics Engineer',
@@ -39,13 +42,14 @@ const Hero = () => {
                     typeSpeed={40}  
                     backSpeed={50}
                     loop />
+                    
               </div><br/>
-              <button className='btn-primary mt-6' id='mainbutton'><a href='https://drive.google.com/file/d/1xAnGs56BjdmwLVbARQMsfsvfbEZI3lqQ/view?usp=sharing' className='font-bold' target={'_blank'}>Download Resume </a></button>
+              <button className='btn-primary mt-6 font-bold' id='mainbutton'><a href='https://drive.google.com/file/d/1CFZv4D5iHlIbQ-l9QduZYEUs5N4V5zVa/view?usp=sharing'  target={'_blank'}>Download Resume </a></button>
 
               <div className="mt-8 text-5xl flex items-center md:justify-start justify-center text-gray-600 cursor-pointer gap-5">
               <a href='https://github.com/Aditya-sathwik' target={'_blank'}><AiFillGithub className='hover:text-white'/></a>
                   <a href='https://www.linkedin.com/in/aditya-sathwik-553616219/'target={'_blank'}><span className='hover:text-white'><AiFillLinkedin /></span></a>
-                  <a href='https://twitter.com/AdityaSathwik'target={'_blank'}><span className='hover:text-white'><AiFillTwitterCircle /></span></a>
+                  <a href='https://twitter.com/AdityaSathwik'target={'_blank'}><span className='hover:text-white'><FaXTwitter/></span></a>
                   <a href='https://www.instagram.com/sathusathvi17/'target={'_blank'}><span className='hover:text-white'><AiFillInstagram/></span></a>
                   
               </div>

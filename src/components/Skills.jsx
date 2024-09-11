@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import {html, css,javascript, reactImage, Github,tailwind, git, bootstrap, wordpress,linux,figma} from './imports';
+import {html, css,javascript, reactImage, Github,tailwind, git,mongo,java, bootstrap, wordpress,linux,figma, node} from './imports';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -64,18 +64,36 @@ const Skills = () => {
     },
     {
       id: 9,
+      src: node,
+      title: "Nodejs",
+      style: 'shadow-green-500',
+    },
+    {
+      id: 10,
+      src: mongo,
+      title: "Mongo DB",
+      style: 'shadow-green-500',
+    },
+    {
+      id: 11,
+      src: java,
+      title: "Java",
+      style: 'shadow-blue-500',
+    },
+    {
+      id: 12,
       src: tailwind,
       title: "TAILWIND",
       style: 'shadow-sky-500',
     },
     {
-      id: 10,
+      id: 13,
       src: linux,
       title: "LINUX",
       style: 'shadow-gray-500',
     },
     {
-      id: 11,
+      id: 14,
       src: figma,
       title: "FIGMA",
       style: 'shadow-orange-500',
@@ -88,14 +106,14 @@ const Skills = () => {
           <span className=' border-b-4 border-white-500 '><span id='namee'>Skills</span> <span className='text-sky-500'></span> </span></h3>
         <p className='text-gray-400 my-5 text-lg' id='headuu2'>Technologies i have worked with</p>
       </div>
-      <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0 text-white cursor-pointer">
+      <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center p-[15px] text-white cursor-pointer">
         {techs.map(({ id, src, title, style }) => (
           <div
             key={id}
             className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`} data-aos="flip-right"
           >
-            <img src={src} alt="" className="w-20 mx-auto" id='icons' />
-            <p className="mt-4" id='skp'>{title}</p>
+            <img src={src} alt="" className="w-[30px] sm:w-[40px]  mx-auto" id='icons' />
+            <p className="mt-4 " id='skp'>{title}</p>
           </div>
         ))}
       </div>

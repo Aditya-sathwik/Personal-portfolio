@@ -8,16 +8,22 @@ import linux from "../assets/linux.png";
 import figma from "../assets/figma.png";
 import wordpress from "../assets/wordpress.png";
 import bootstrap from "../assets/bootstrap.jpg";
+import node from "../assets/node.png"
+import java from "../assets/java.png"
+import mongo from "../assets/mongo.png"
 
 import tailwind from "../assets/tailwind.png";
 
 export {
-    html, 
+    html,
     css,
-     javascript, 
-     reactImage,
+    javascript,
+    reactImage,
+    node,
+    mongo,
+    java,
     Github,
-    tailwind, 
+    tailwind,
     git,
     bootstrap,
     wordpress,
