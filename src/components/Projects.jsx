@@ -15,7 +15,7 @@ const projects = [
   },
   {
     image: project2,
-    title: "Learn Ai Blog Application",
+    title: "Ai Meetup Application",
     githubLink: "https://github.com/Aditya-sathwik/gpt3",
     externalLink: "https://ai-2023.vercel.app/",
     shadowColor: "purple-500",
